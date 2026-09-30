@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aleena Johns </title>
+    <title>Aleena Johns</title>
+
+    <meta name="description"
+          content="Aleena Johns - Data Analyst | Python | SQL | Data Visualisation">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -19,531 +23,905 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            background: #111;
+            color: #222;
+            line-height: 1.6;
+
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.82),
+                    rgba(255, 255, 255, 0.82)
+                ),
+                url("visualisations/background image.jpeg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
 
-        /* =========================
-           NAVIGATION
-        ========================= */
+        /* NAVIGATION */
 
         nav {
-            position: absolute;
+            position: sticky;
             top: 0;
-            left: 0;
-            width: 100%;
-            padding: 25px 7%;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.96);
+
+            box-shadow:
+                0 2px 12px rgba(0, 0, 0, 0.12);
+
+            padding: 15px 30px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
-            z-index: 10;
         }
 
-        .brand {
-            font-size: 18px;
+        .logo {
+            font-size: 22px;
             font-weight: bold;
-            letter-spacing: 1px;
+            color: #222;
         }
 
-        nav ul {
-            list-style: none;
+        .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 25px;
+            list-style: none;
         }
 
-        nav ul li a {
-            color: white;
+        .nav-links a {
             text-decoration: none;
-            font-size: 14px;
+            color: #333;
+            font-weight: 600;
             transition: 0.3s;
         }
 
-        nav ul li a:hover {
-            opacity: 0.7;
+        .nav-links a:hover {
+            color: #0077b5;
         }
 
-        /* =========================
-           HERO / FRONT PAGE
-        ========================= */
+        /* HERO */
 
         .hero {
-    min-height: 100vh;
-    position: relative;
+            min-height: 85vh;
 
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.65)
-        ),
-       url("./visualisations/background%20image.jpeg?v=2");
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+            text-align: center;
 
-    display: flex;
-    align-items: center;
-    padding: 100px 7%;
-}
+            padding: 60px 20px;
         }
 
         .hero-content {
             max-width: 850px;
         }
 
-        .small-title {
-            font-size: 15px;
-            letter-spacing: 4px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
         .hero h1 {
-            font-size: clamp(55px, 9vw, 120px);
-            line-height: 0.95;
-            letter-spacing: -4px;
-            margin-bottom: 25px;
+            font-size: 60px;
+            margin-bottom: 15px;
+            color: #111;
         }
 
         .hero h2 {
-            font-size: clamp(20px, 3vw, 32px);
-            font-weight: normal;
-            margin-bottom: 25px;
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #444;
         }
 
         .hero p {
-            max-width: 650px;
-            font-size: 17px;
-            line-height: 1.7;
-            margin-bottom: 35px;
+            font-size: 21px;
+            color: #555;
+            margin-bottom: 30px;
         }
 
-        /* =========================
-           BUTTONS
-        ========================= */
-
-        .buttons {
+        .hero-buttons {
             display: flex;
+            justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
-            padding: 14px 25px;
-            border: 1px solid white;
-            color: white;
+
+            padding: 12px 24px;
+
+            border-radius: 8px;
+
             text-decoration: none;
-            font-size: 14px;
+
+            font-weight: bold;
+
             transition: 0.3s;
         }
 
-        .btn:hover {
-            background: white;
-            color: black;
+        .btn-primary {
+            background: #0077b5;
+            color: white;
         }
 
-        /* =========================
-           SECTIONS
-        ========================= */
+        .btn-secondary {
+            background: #222;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        /* GENERAL SECTIONS */
 
         section {
-            padding: 90px 7%;
-            color: #222;
-            background: white;
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 25px;
         }
 
         section h2 {
-            font-size: 42px;
-            margin-bottom: 25px;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #111;
         }
 
-        section p {
-            max-width: 800px;
-            line-height: 1.8;
-            font-size: 16px;
+        /* ABOUT */
+
+        .about-box {
+            background: rgba(255, 255, 255, 0.95);
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.10);
+
+            max-width: 950px;
+
+            margin: auto;
         }
 
-        /* =========================
-           STATS
-        ========================= */
+        .about-box p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
 
-        .stats {
+        /* SKILLS */
+
+        .skills-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
             gap: 20px;
-            margin-top: 40px;
         }
 
-        .stat {
-            padding: 30px;
-            background: #f4f4f4;
+        .skill {
+            background: rgba(255, 255, 255, 0.95);
+
+            padding: 25px;
+
+            text-align: center;
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.10);
+
+            font-weight: bold;
         }
 
-        .stat h3 {
-            font-size: 32px;
-            margin-bottom: 8px;
-        }
+        /* PROJECT */
 
-        .stat p {
-            font-size: 14px;
-        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.96);
 
-        /* =========================
-           PROJECT
-        ========================= */
-
-        .project {
-            margin-top: 40px;
             padding: 35px;
-            background: #f4f4f4;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.12);
+
+            max-width: 1050px;
+
+            margin: auto;
         }
 
-        .project h3 {
+        .project-card h3 {
             font-size: 28px;
             margin-bottom: 15px;
         }
 
-        .project a {
-            display: inline-block;
-            margin-top: 20px;
-            color: #111;
-            font-weight: bold;
+        .project-card p {
+            font-size: 17px;
+            margin-bottom: 15px;
         }
 
-        /* =========================
-           SKILLS
-        ========================= */
+        .project-details {
+            display: grid;
 
-        .skills {
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+            margin: 25px 0;
+        }
+
+        .project-detail {
+            background: #f5f5f5;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            text-align: center;
+        }
+
+        .project-detail strong {
+            display: block;
+
+            font-size: 24px;
+
+            margin-bottom: 5px;
+        }
+
+        /* DASHBOARD */
+
+        .dashboard-card {
+            background: rgba(255, 255, 255, 0.96);
+
+            padding: 25px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.12);
+
+            margin-bottom: 50px;
+        }
+
+        .dashboard-card img {
+            width: 100%;
+
+            height: auto;
+
+            display: block;
+
+            border-radius: 12px;
+        }
+
+        .dashboard-caption {
+            text-align: center;
+
+            margin-top: 15px;
+
+            font-size: 17px;
+
+            color: #555;
+        }
+
+        /* VISUALISATIONS */
+
+        .visualisation-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 30px;
+        }
+
+        .visualisation-card {
+            background: rgba(255, 255, 255, 0.97);
+
+            padding: 20px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.12);
+
+            transition: 0.3s;
+        }
+
+        .visualisation-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 12px 30px rgba(0, 0, 0, 0.18);
+        }
+
+        .visualisation-card h3 {
+            text-align: center;
+
+            margin-bottom: 15px;
+
+            font-size: 20px;
+        }
+
+        .visualisation-card img {
+            width: 100%;
+
+            height: auto;
+
+            display: block;
+
+            border-radius: 10px;
+        }
+
+        /* CONTACT */
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.96);
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.10);
+
+            text-align: center;
+
+            max-width: 800px;
+
+            margin: auto;
+        }
+
+        .contact-box p {
+            font-size: 18px;
+
+            margin-bottom: 20px;
+        }
+
+        .social-links {
             display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
             flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 30px;
         }
 
-        .skill {
-            padding: 12px 18px;
-            border: 1px solid #ccc;
-            background: #fafafa;
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
+        /* FOOTER */
 
         footer {
-            padding: 35px 7%;
             text-align: center;
-            background: #111;
-            color: white;
-            font-size: 14px;
+
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.95);
+
+            margin-top: 50px;
+
+            color: #555;
         }
 
-        /* =========================
-           MOBILE
-        ========================= */
+        /* MOBILE */
 
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
 
-            nav {
-                padding: 20px 5%;
+            .skills-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
-            nav ul {
-                gap: 12px;
-            }
-
-            nav ul li a {
-                font-size: 12px;
-            }
-
-            .hero {
-                padding: 100px 5% 60px;
-                background-position: center;
-            }
-
-            .hero h1 {
-                letter-spacing: -2px;
-            }
-
-            .hero p {
-                font-size: 15px;
-            }
-
-            section {
-                padding: 65px 5%;
-            }
-
-            section h2 {
-                font-size: 34px;
-            }
-
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-
-            nav {
-                align-items: flex-start;
-            }
-
-            nav ul {
-                display: none;
-            }
-
-            .stats {
+            .visualisation-grid {
                 grid-template-columns: 1fr;
             }
 
             .hero h1 {
-                font-size: 55px;
+                font-size: 45px;
             }
+
         }
+
+        @media (max-width: 600px) {
+
+            nav {
+                padding: 12px 15px;
+            }
+
+            .nav-container {
+                flex-direction: column;
+
+                gap: 10px;
+            }
+
+            .nav-links {
+                gap: 12px;
+
+                font-size: 14px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            section h2 {
+                font-size: 30px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-details {
+                grid-template-columns: 1fr;
+            }
+
+            .about-box,
+            .project-card,
+            .contact-box {
+                padding: 25px;
+            }
+
+        }
+
     </style>
 </head>
 
+
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
 
-    <nav>
-        <div class="brand">
-            
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="nav-container">
+
+        <div class="logo">
+            ALEENA JOHNS
         </div>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="nav-links">
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#visualisations">Visualisations</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
         </ul>
-    </nav>
+
+    </div>
+
+</nav>
 
 
-    <!-- =========================
-         FRONT PAGE
-    ========================= -->
 
-    <header class="hero">
+<!-- HERO -->
 
-        <div class="hero-content">
+<header class="hero">
 
-            <div class="small-title">
-                
-            </div>
+    <div class="hero-content">
 
-            <h1>
-                ALEENA<br>
-                JOHNS
-            </h1>
+        <h1>ALEENA JOHNS</h1>
 
-            <h2>
-                Data Analyst | Python | SQL | Data Visualisation
-            </h2>
-
-            <p>
-                I turn data into meaningful insights using Python,
-                Pandas and data visualisation. This portfolio showcases
-                my analytical projects, technical skills and approach
-                to solving real-world business problems with data.
-            </p>
-
-            <div class="buttons">
-
-                <a
-                    class="btn"
-                    href="https://www.linkedin.com/in/aleena-johns-825b65156/"
-                    target="_blank">
-                    LinkedIn
-                </a>
-
-                <a
-                    class="btn"
-                    href="https://github.com/aleenajohnz"
-                    target="_blank">
-                    GitHub
-                </a>
-
-                <a
-                    class="btn"
-                    href="#project">
-                    View Project
-                </a>
-
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
-    <section id="about">
-
-        <h2>About Me</h2>
+        <h2>
+            Data Analyst | Python | SQL | Data Visualisation
+        </h2>
 
         <p>
-            I am a data-focused professional with experience across
-            IT support, healthcare administration and digital systems.
-            I am particularly interested in Data Analytics, NHS Digital,
-            healthcare technology and operational reporting.
+            I turn data into meaningful insights.
         </p>
 
-        <p style="margin-top: 20px;">
-            My technical background includes Python, Pandas,
-            data analysis, data visualisation, Microsoft technologies,
-            IT service management and enterprise systems.
-        </p>
-
-        <div class="stats">
-
-            <div class="stat">
-                <h3>1,200</h3>
-                <p>Records Analysed</p>
-            </div>
-
-            <div class="stat">
-                <h3>12</h3>
-                <p>Weeks Analysed</p>
-            </div>
-
-            <div class="stat">
-                <h3>544K+</h3>
-                <p>Cases Reviewed</p>
-            </div>
-
-            <div class="stat">
-                <h3>10+</h3>
-                <p>Visualisations</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECT
-    ========================= -->
-
-    <section id="project">
-
-        <h2>Featured Project</h2>
-
-        <div class="project">
-
-            <h3>
-                Wipro Content Review Performance Analysis
-            </h3>
-
-            <p>
-                A data analytics project analysing 1,200 content review
-                records across 12 weeks. The project examines productivity,
-                quality, accuracy, adherence, errors, overtime, attendance
-                and team performance.
-            </p>
-
-            <p style="margin-top: 15px;">
-                The analysis was completed using Python, Pandas,
-                NumPy, Matplotlib and Seaborn. More than 10 visualisations
-                and a performance dashboard were created to communicate
-                the results.
-            </p>
+        <div class="hero-buttons">
 
             <a
-                href="https://github.com/aleenajohnz/Wipro-Content-Review-Performance-Analysis"
-                target="_blank">
-                View Project on GitHub →
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================= -->
-
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="skills">
-
-            <div class="skill">Python</div>
-            <div class="skill">Pandas</div>
-            <div class="skill">NumPy</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Matplotlib</div>
-            <div class="skill">Seaborn</div>
-            <div class="skill">Data Cleaning</div>
-            <div class="skill">Data Analysis</div>
-            <div class="skill">Data Visualisation</div>
-            <div class="skill">KPI Analysis</div>
-            <div class="skill">Exploratory Data Analysis</div>
-            <div class="skill">Microsoft Excel</div>
-            <div class="skill">IT Service Management</div>
-            <div class="skill">NHS Digital Systems</div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
-    <section id="contact">
-
-        <h2>Let's Connect</h2>
-
-        <p>
-            I am interested in opportunities in Data Analytics,
-            NHS Digital, healthcare technology and IT.
-        </p>
-
-        <div class="buttons" style="margin-top: 30px;">
-
-            <a
-                class="btn"
+                class="btn btn-primary"
                 href="https://www.linkedin.com/in/aleena-johns-825b65156/"
-                target="_blank"
-                style="color: #222; border-color: #222;">
+                target="_blank">
                 LinkedIn
             </a>
 
             <a
-                class="btn"
-                href="https://github.com/aleenajohnz"
-                target="_blank"
-                style="color: #222; border-color: #222;">
+                class="btn btn-secondary"
+                href="https://github.com/"
+                target="_blank">
+                GitHub
+            </a>
+
+            <a
+                class="btn btn-primary"
+                href="#projects">
+                View My Work
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-box">
+
+        <p>
+            I am a Data Analyst with a background in IT support,
+            data analysis and healthcare administration.
+        </p>
+
+        <p>
+            I enjoy working with data to identify patterns,
+            measure performance and communicate insights clearly
+            through visualisations and dashboards.
+        </p>
+
+        <p>
+            My technical skills include Python, Pandas, SQL,
+            Excel, data cleaning, exploratory data analysis,
+            data visualisation and reporting.
+        </p>
+
+        <p>
+            I am particularly interested in using data to support
+            better decision-making and improve business processes.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill">Python</div>
+
+        <div class="skill">Pandas</div>
+
+        <div class="skill">SQL</div>
+
+        <div class="skill">Excel</div>
+
+        <div class="skill">Data Cleaning</div>
+
+        <div class="skill">Data Analysis</div>
+
+        <div class="skill">Data Visualisation</div>
+
+        <div class="skill">Dashboard Development</div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PROJECT -->
+
+<section id="projects">
+
+    <h2>Featured Project</h2>
+
+    <div class="project-card">
+
+        <h3>
+            Wipro Content Review Performance Analysis
+        </h3>
+
+        <p>
+            An end-to-end data analysis project examining
+            employee performance, productivity, quality,
+            accuracy, adherence, absence, overtime and
+            error rates.
+        </p>
+
+        <p>
+            The project involved data cleaning, exploratory
+            analysis, KPI analysis, correlation analysis and
+            data visualisation using Python and Pandas.
+        </p>
+
+        <div class="project-details">
+
+            <div class="project-detail">
+
+                <strong>1,200</strong>
+
+                Records
+
+            </div>
+
+            <div class="project-detail">
+
+                <strong>12</strong>
+
+                Weeks
+
+            </div>
+
+            <div class="project-detail">
+
+                <strong>100.79%</strong>
+
+                Average Productivity
+
+            </div>
+
+        </div>
+
+        <p>
+            <strong>Tools:</strong>
+            Python, Pandas, Matplotlib, Seaborn,
+            Jupyter Notebook and GitHub Pages
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- DASHBOARD & VISUALISATIONS -->
+
+<section id="visualisations">
+
+    <h2>Dashboard & Visualisations</h2>
+
+
+    <!-- MAIN DASHBOARD -->
+
+    <div class="dashboard-card">
+
+        <h3 style="text-align:center; margin-bottom:20px;">
+            Wipro Content Review Performance Dashboard
+        </h3>
+
+        <img
+            src="visualisations/wipro_content_review_dashboard (1).png"
+            alt="Wipro Content Review Performance Dashboard">
+
+        <p class="dashboard-caption">
+            Overview of key performance indicators and
+            employee performance metrics.
+        </p>
+
+    </div>
+
+
+    <!-- 11 VISUALISATIONS -->
+
+    <div class="visualisation-grid">
+
+
+        <div class="visualisation-card">
+
+            <h3>Absence vs Overall Score</h3>
+
+            <img
+                src="visualisations/absence_vs_overall_score.png"
+                alt="Absence vs Overall Score">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Cases vs Productivity</h3>
+
+            <img
+                src="visualisations/cases_vs_productivity.png"
+                alt="Cases vs Productivity">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Correlation Heatmap</h3>
+
+            <img
+                src="visualisations/correlation_heatmap.png"
+                alt="Correlation Heatmap">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Error Rate by Performance Status</h3>
+
+            <img
+                src="visualisations/error_rate_by_performance_status.png"
+                alt="Error Rate by Performance Status">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Overall Performance KPIs</h3>
+
+            <img
+                src="visualisations/overall_performance_kpis.png"
+                alt="Overall Performance KPIs">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Overtime vs Overall Score</h3>
+
+            <img
+                src="visualisations/overtime_vs_overall_score.png"
+                alt="Overtime vs Overall Score">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Productivity vs Quality</h3>
+
+            <img
+                src="visualisations/productivity_vs_quality.png"
+                alt="Productivity vs Quality">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Team Error Rate</h3>
+
+            <img
+                src="visualisations/team_error_rate.png"
+                alt="Team Error Rate">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Team Overall Score</h3>
+
+            <img
+                src="visualisations/team_overall_score.png"
+                alt="Team Overall Score">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Top 10 Employee Error Rate</h3>
+
+            <img
+                src="visualisations/top_10_employee_error_rate.png"
+                alt="Top 10 Employee Error Rate">
+
+        </div>
+
+
+        <div class="visualisation-card">
+
+            <h3>Weekly Overall Score</h3>
+
+            <img
+                src="visualisations/weekly_overall_score.png"
+                alt="Weekly Overall Score">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2>Let's Connect</h2>
+
+    <div class="contact-box">
+
+        <p>
+            I am interested in Data Analyst,
+            Business Intelligence and Digital/IT opportunities.
+        </p>
+
+        <div class="social-links">
+
+            <a
+                class="btn btn-primary"
+                href="https://www.linkedin.com/in/aleena-johns-825b65156/"
+                target="_blank">
+                LinkedIn
+            </a>
+
+            <a
+                class="btn btn-secondary"
+                href="https://github.com/"
+                target="_blank">
                 GitHub
             </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
 
-    <footer>
+<!-- FOOTER -->
 
+<footer>
+
+    <p>
         © 2026 Aleena Johns | Data Analyst Portfolio
+    </p>
 
-    </footer>
+</footer>
+
 
 </body>
 </html>
