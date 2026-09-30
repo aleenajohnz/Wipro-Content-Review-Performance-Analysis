@@ -118,6 +118,18 @@ Developed a dashboard summarising the main KPIs and performance trends.
 
 The analysis identified several important patterns in the content review dataset.
 
+* Overall productivity averaged **100.79%**, while quality averaged **92.41%**.
+* Average accuracy was **93.93%**, and average adherence was **94.97%**.
+* The average overall performance score was **96.35%**.
+* A total of **544,281 cases** were reviewed against a target of **540,000 cases**.
+* The overall error rate was approximately **7.61%**.
+* **83.83%** of records were classified as either Met Target or Exceeded Target.
+* Team-level analysis showed differences in productivity, quality, accuracy, error rates and overtime.
+* Weekly analysis showed variation in performance across the 12-week period.
+* The correlation between productivity and quality was approximately **-0.02**, indicating a negligible linear relationship.
+* Employee-level analysis showed variation in overall performance, workload and error rates.
+
+
 ### Overall Performance
 
 - Average productivity was **100.79%**.
