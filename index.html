@@ -1,1040 +1,548 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Aleena Johns | Data Analyst Portfolio</title>
-
-<style>
-
-:root{
-    --bg:#f6f7fb;
-    --surface:#ffffff;
-    --text:#171b2d;
-    --muted:#667085;
-    --accent:#5b5bd6;
-    --accent-dark:#3f3fa8;
-    --line:#e4e7ec;
-    --soft:#eeeeff;
-    --dark:#171b2d;
-}
-
-*{
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.6;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-/* NAVIGATION */
-
-.nav{
-    position:sticky;
-    top:0;
-    z-index:10;
-    background:rgba(255,255,255,0.96);
-    border-bottom:1px solid var(--line);
-}
-
-.navin{
-    max-width:1150px;
-    margin:auto;
-    padding:18px 25px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.brand{
-    font-size:30px;
-    font-weight:900;
-    letter-spacing:.04em;
-}
-
-.links{
-    display:flex;
-    gap:28px;
-    font-size:15px;
-    font-weight:600;
-    color:#475467;
-}
-
-.links a:hover{
-    color:var(--accent);
-}
-
-/* HERO */
-
-.hero{
-    max-width:1150px;
-    margin:auto;
-    padding:90px 25px 80px;
-    display:grid;
-    grid-template-columns:1.25fr .75fr;
-    gap:60px;
-    align-items:center;
-}
-
-.eyebrow{
-    color:var(--accent);
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:.14em;
-    font-size:14px;
-}
-
-.hero h1{
-    font-size:clamp(60px,9vw,105px);
-    line-height:.95;
-    margin:14px 0 20px;
-    letter-spacing:-.055em;
-}
-
-.hero h1 span{
-    background:linear-gradient(90deg,#4b4bc4,#8b5cf6);
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
-}
-
-.hero-subtitle{
-    font-size:23px;
-    font-weight:700;
-    margin:0 0 12px;
-}
-
-.hero-description{
-    font-size:18px;
-    color:var(--muted);
-    max-width:680px;
-}
-
-/* BUTTONS */
-
-.buttons{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-top:28px;
-}
-
-.btn{
-    padding:13px 20px;
-    border-radius:12px;
-    border:2px solid var(--dark);
-    font-weight:800;
-    background:var(--dark);
-    color:white;
-    display:inline-block;
-}
-
-.btn:hover{
-    background:var(--accent);
-    border-color:var(--accent);
-    transform:translateY(-2px);
-}
-
-.btn.primary{
-    background:var(--accent);
-    border-color:var(--accent);
-}
-
-.btn.primary:hover{
-    background:var(--accent-dark);
-}
-
-/* PHOTO CARD */
-
-.profile{
-    background:white;
-    border:1px solid var(--line);
-    border-radius:28px;
-    padding:28px;
-    box-shadow:0 20px 50px rgba(35,38,75,.10);
-    text-align:center;
-}
-
-.profile-photo{
-    width:260px;
-    height:260px;
-    object-fit:cover;
-    border-radius:50%;
-    border:8px solid var(--soft);
-    display:block;
-    margin:0 auto 22px;
-}
-
-.profile h3{
-    margin:0 0 5px;
-    font-size:23px;
-}
-
-.profile p{
-    margin:0;
-    color:var(--muted);
-}
-
-.chips{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:8px;
-    margin-top:20px;
-}
-
-.chip{
-    background:var(--soft);
-    border:1px solid #dddfff;
-    padding:7px 11px;
-    border-radius:999px;
-    font-size:12px;
-    font-weight:700;
-}
-
-/* SECTIONS */
-
-section{
-    max-width:1150px;
-    margin:auto;
-    padding:75px 25px;
-}
-
-.sectionhead{
-    margin-bottom:30px;
-}
-
-.sectionhead h2{
-    font-size:38px;
-    margin:0 0 8px;
-    letter-spacing:-.035em;
-}
-
-.sectionhead p{
-    color:var(--muted);
-    margin:0;
-}
-
-/* ABOUT */
-
-.about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.card{
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:20px;
-    padding:28px;
-}
-
-.card h3{
-    margin-top:0;
-}
-
-/* STATS */
-
-.stats{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.stat{
-    padding:24px;
-    background:white;
-    border:1px solid var(--line);
-    border-radius:18px;
-}
-
-.stat strong{
-    font-size:29px;
-    display:block;
-}
-
-.stat span{
-    font-size:13px;
-    color:var(--muted);
-}
-
-/* PROJECT */
-
-.project{
-    background:white;
-    border:1px solid var(--line);
-    border-radius:26px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(35,38,75,.07);
-}
-
-.projectbody{
-    padding:32px;
-}
-
-.project h3{
-    font-size:28px;
-    margin:0 0 10px;
-}
-
-.project p{
-    color:var(--muted);
-}
-
-.metrics{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:13px;
-    margin:25px 0;
-}
-
-.metric{
-    background:var(--soft);
-    border-radius:15px;
-    padding:17px;
-}
-
-.metric b{
-    display:block;
-    font-size:21px;
-}
-
-.metric small{
-    color:var(--muted);
-}
-
-.dash{
-    width:100%;
-    display:block;
-    border-top:1px solid var(--line);
-    background:#fafafa;
-}
-
-.projectlinks{
-    display:flex;
-    gap:12px;
-    margin-top:24px;
-    flex-wrap:wrap;
-}
-
-.mini{
-    font-size:14px;
-    padding:11px 15px;
-    border:2px solid var(--dark);
-    border-radius:10px;
-    font-weight:800;
-    background:var(--dark);
-    color:white;
-}
-
-.mini:hover{
-    background:var(--accent);
-    border-color:var(--accent);
-}
-
-/* SKILLS */
-
-.skills{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.skill h3{
-    font-size:18px;
-}
-
-.skill ul{
-    padding-left:20px;
-    color:var(--muted);
-}
-
-/* CONTACT */
-
-.contact{
-    background:linear-gradient(135deg,#191c35,#5b5bd6);
-    color:white;
-    border-radius:28px;
-    padding:48px;
-}
-
-.contact h2{
-    font-size:38px;
-    margin-top:0;
-}
-
-.contact p{
-    opacity:.9;
-    max-width:700px;
-}
-
-.contact .btn{
-    background:white;
-    color:#171b2d;
-    border-color:white;
-}
-
-.contact .btn:hover{
-    background:#eeeeff;
-    border-color:#eeeeff;
-}
-
-/* FOOTER */
-
-.footer{
-    max-width:1150px;
-    margin:auto;
-    padding:30px 25px;
-    color:var(--muted);
-    font-size:13px;
-    text-align:center;
-}
-
-/* MOBILE */
-
-@media(max-width:850px){
-
-    .hero{
-        grid-template-columns:1fr;
-        padding-top:60px;
-    }
-
-    .hero h1{
-        font-size:65px;
-    }
-
-    .about{
-        grid-template-columns:1fr;
-    }
-
-    .stats{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .metrics{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .skills{
-        grid-template-columns:1fr;
-    }
-
-    .links{
-        display:none;
-    }
-
-}
-
-@media(max-width:500px){
-
-    .hero h1{
-        font-size:52px;
-    }
-
-    .stats,
-    .metrics{
-        grid-template-columns:1fr;
-    }
-
-    .profile-photo{
-        width:210px;
-        height:210px;
-    }
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aleena Johns | Data Analyst Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background: #111;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .brand {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.7;
+        }
+
+        /* =========================
+           HERO / FRONT PAGE
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+            position: relative;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.65)
+                ),
+                url("./visualisations/background-image.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            align-items: center;
+            padding: 100px 7%;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .small-title {
+            font-size: 15px;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 9vw, 120px);
+            line-height: 0.95;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 3vw, 32px);
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 35px;
+        }
+
+        /* =========================
+           BUTTONS
+        ========================= */
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border: 1px solid white;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            color: black;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 90px 7%;
+            color: #222;
+            background: white;
+        }
+
+        section h2 {
+            font-size: 42px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            max-width: 800px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* =========================
+           STATS
+        ========================= */
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .stat {
+            padding: 30px;
+            background: #f4f4f4;
+        }
+
+        .stat h3 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .stat p {
+            font-size: 14px;
+        }
+
+        /* =========================
+           PROJECT
+        ========================= */
+
+        .project {
+            margin-top: 40px;
+            padding: 35px;
+            background: #f4f4f4;
+        }
+
+        .project h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #111;
+            font-weight: bold;
+        }
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .skill {
+            padding: 12px 18px;
+            border: 1px solid #ccc;
+            background: #fafafa;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 35px 7%;
+            text-align: center;
+            background: #111;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            nav {
+                padding: 20px 5%;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            nav ul li a {
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 100px 5% 60px;
+                background-position: center;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            section {
+                padding: 65px 5%;
+            }
+
+            section h2 {
+                font-size: 34px;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            nav {
+                align-items: flex-start;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 55px;
+            }
+        }
+    </style>
 </head>
-
 
 <body>
 
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
 
-<!-- NAVIGATION -->
+    <nav>
+        <div class="brand">
+            Data Analyst Portfolio
+        </div>
 
-<nav class="nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- =========================
+         FRONT PAGE
+    ========================= -->
+
+    <header class="hero">
 
-<div class="navin">
+        <div class="hero-content">
 
-<div class="brand">
-ALEENA JOHNS
-</div>
+            <div class="small-title">
+                Data Analyst Portfolio
+            </div>
 
-<div class="links">
+            <h1>
+                ALEENA<br>
+                JOHNS
+            </h1>
 
-<a href="#about">About</a>
+            <h2>
+                Data Analyst | Python | SQL | Data Visualisation
+            </h2>
 
-<a href="#projects">Projects</a>
+            <p>
+                I turn data into meaningful insights using Python,
+                Pandas and data visualisation. This portfolio showcases
+                my analytical projects, technical skills and approach
+                to solving real-world business problems with data.
+            </p>
 
-<a href="#skills">Skills</a>
+            <div class="buttons">
 
-<a href="#contact">Contact</a>
+                <a
+                    class="btn"
+                    href="https://www.linkedin.com/in/aleena-johns-825b65156/"
+                    target="_blank">
+                    LinkedIn
+                </a>
 
-</div>
+                <a
+                    class="btn"
+                    href="https://github.com/aleenajohnz"
+                    target="_blank">
+                    GitHub
+                </a>
 
-</div>
+                <a
+                    class="btn"
+                    href="#project">
+                    View Project
+                </a>
 
-</nav>
+            </div>
 
+        </div>
 
+    </header>
 
-<!-- HERO SECTION -->
 
-<header class="hero">
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
+    <section id="about">
 
-<div>
+        <h2>About Me</h2>
 
-<div class="eyebrow">
-DATA ANALYST PORTFOLIO
-</div>
+        <p>
+            I am a data-focused professional with experience across
+            IT support, healthcare administration and digital systems.
+            I am particularly interested in Data Analytics, NHS Digital,
+            healthcare technology and operational reporting.
+        </p>
 
+        <p style="margin-top: 20px;">
+            My technical background includes Python, Pandas,
+            data analysis, data visualisation, Microsoft technologies,
+            IT service management and enterprise systems.
+        </p>
 
-<h1>
-<span>ALEENA JOHNS</span>
-</h1>
+        <div class="stats">
 
+            <div class="stat">
+                <h3>1,200</h3>
+                <p>Records Analysed</p>
+            </div>
 
-<p class="hero-subtitle">
-Data Analyst | Python | SQL | Data Visualisation
-</p>
+            <div class="stat">
+                <h3>12</h3>
+                <p>Weeks Analysed</p>
+            </div>
 
+            <div class="stat">
+                <h3>544K+</h3>
+                <p>Cases Reviewed</p>
+            </div>
 
-<p class="hero-description">
-Turning data into useful insights through data cleaning,
-analysis, visualisation and business reporting.
-</p>
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Visualisations</p>
+            </div>
 
+        </div>
 
-<div class="buttons">
+    </section>
 
-<a class="btn primary"
-href="#projects">
-View My Project
-</a>
 
+    <!-- =========================
+         PROJECT
+    ========================= -->
 
-<a class="btn"
-href="https://www.linkedin.com/in/aleena-johns-825b65156/"
-target="_blank">
-LinkedIn ↗
-</a>
+    <section id="project">
 
+        <h2>Featured Project</h2>
 
-<a class="btn"
-href="https://github.com/aleenajohnz"
-target="_blank">
-GitHub ↗
-</a>
+        <div class="project">
 
-</div>
+            <h3>
+                Wipro Content Review Performance Analysis
+            </h3>
 
-</div>
+            <p>
+                A data analytics project analysing 1,200 content review
+                records across 12 weeks. The project examines productivity,
+                quality, accuracy, adherence, errors, overtime, attendance
+                and team performance.
+            </p>
 
+            <p style="margin-top: 15px;">
+                The analysis was completed using Python, Pandas,
+                NumPy, Matplotlib and Seaborn. More than 10 visualisations
+                and a performance dashboard were created to communicate
+                the results.
+            </p>
 
+            <a
+                href="https://github.com/aleenajohnz/Wipro-Content-Review-Performance-Analysis"
+                target="_blank">
+                View Project on GitHub →
+            </a>
 
-<!-- PROFILE PHOTO -->
+        </div>
 
-<div class="profile">
+    </section>
 
-<img
-class="profile-photo"
-src="./visualisations/WhatsApp%20Image%202023-01-01%20at%209.22.18%20PM.jpeg"
-alt="Aleena Johns professional photo"
->
 
+    <!-- =========================
+         SKILLS
+    ========================= -->
 
-<h3>
-Aleena Johns
-</h3>
+    <section id="skills">
 
+        <h2>Skills</h2>
 
-<p>
-Data Analyst • Python • SQL • Data Visualisation
-</p>
+        <div class="skills">
 
+            <div class="skill">Python</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">NumPy</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Matplotlib</div>
+            <div class="skill">Seaborn</div>
+            <div class="skill">Data Cleaning</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Data Visualisation</div>
+            <div class="skill">KPI Analysis</div>
+            <div class="skill">Exploratory Data Analysis</div>
+            <div class="skill">Microsoft Excel</div>
+            <div class="skill">IT Service Management</div>
+            <div class="skill">NHS Digital Systems</div>
 
-<div class="chips">
+        </div>
 
-<span class="chip">Python</span>
+    </section>
 
-<span class="chip">Pandas</span>
 
-<span class="chip">SQL</span>
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
-<span class="chip">Excel</span>
+    <section id="contact">
 
-<span class="chip">GitHub</span>
+        <h2>Let's Connect</h2>
 
-</div>
+        <p>
+            I am interested in opportunities in Data Analytics,
+            NHS Digital, healthcare technology and IT.
+        </p>
 
-</div>
+        <div class="buttons" style="margin-top: 30px;">
 
+            <a
+                class="btn"
+                href="https://www.linkedin.com/in/aleena-johns-825b65156/"
+                target="_blank"
+                style="color: #222; border-color: #222;">
+                LinkedIn
+            </a>
 
-</header>
+            <a
+                class="btn"
+                href="https://github.com/aleenajohnz"
+                target="_blank"
+                style="color: #222; border-color: #222;">
+                GitHub
+            </a>
 
+        </div>
 
+    </section>
 
-<!-- ABOUT -->
 
-<section id="about">
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
-<div class="sectionhead">
+    <footer>
 
-<h2>
-About Me
-</h2>
+        © 2026 Aleena Johns | Data Analyst Portfolio
 
-<p>
-A practical, business-focused approach to analysing operational data.
-</p>
-
-</div>
-
-
-<div class="about">
-
-
-<div class="card">
-
-<h3>
-Profile
-</h3>
-
-<p>
-I have an IT background and experience supporting users,
-systems and operational processes. I enjoy working with data
-to understand performance, identify patterns and communicate
-findings clearly.
-</p>
-
-<p>
-My portfolio focuses on projects that demonstrate data cleaning,
-exploratory analysis, KPI reporting, visualisation and business
-recommendations.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-What I Bring
-</h3>
-
-<p>
-Problem solving, structured analysis, attention to data quality
-and the ability to translate technical results into clear business
-insights.
-</p>
-
-<p>
-I am particularly interested in Data Analyst and digital/IT roles.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- STATS -->
-
-<section>
-
-<div class="stats">
-
-
-<div class="stat">
-
-<strong>
-1,200
-</strong>
-
-<span>
-Records analysed
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>
-12
-</strong>
-
-<span>
-Weeks covered
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>
-544,281
-</strong>
-
-<span>
-Cases reviewed
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>
-7.61%
-</strong>
-
-<span>
-Overall error rate
-</span>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- PROJECT -->
-
-<section id="projects">
-
-<div class="sectionhead">
-
-<h2>
-Featured Project
-</h2>
-
-<p>
-A complete operational performance analysis project.
-</p>
-
-</div>
-
-
-
-<article class="project">
-
-
-<div class="projectbody">
-
-
-<h3>
-Wipro Content Review Performance Analysis
-</h3>
-
-
-<p>
-Analysed content review performance across teams and employees
-using Python, Pandas and data visualisation. The project covers
-productivity, quality, accuracy, adherence, workload, errors,
-overtime, attendance and weekly trends.
-</p>
-
-
-
-<div class="metrics">
-
-
-<div class="metric">
-
-<b>
-100.79%
-</b>
-
-<small>
-Productivity
-</small>
-
-</div>
-
-
-<div class="metric">
-
-<b>
-92.41%
-</b>
-
-<small>
-Quality
-</small>
-
-</div>
-
-
-<div class="metric">
-
-<b>
-96.35%
-</b>
-
-<small>
-Overall Score
-</small>
-
-</div>
-
-
-<div class="metric">
-
-<b>
-83.83%
-</b>
-
-<small>
-Met or Exceeded Target
-</small>
-
-</div>
-
-
-</div>
-
-
-
-<p>
-
-<strong>
-Key insight:
-</strong>
-
-Productivity and quality showed a negligible linear
-correlation of approximately -0.02 in this dataset,
-highlighting the value of considering multiple KPIs together.
-
-</p>
-
-
-
-<div class="projectlinks">
-
-
-<a class="mini"
-href="https://github.com/aleenajohnz/Wipro-Content-Review-Performance-Analysis"
-target="_blank">
-
-View GitHub Repository ↗
-
-</a>
-
-
-<a class="mini"
-href="https://github.com/aleenajohnz/Wipro-Content-Review-Performance-Analysis/blob/main/Wipro_Content_Review_Analysis.ipynb"
-target="_blank">
-
-Open Notebook ↗
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-<img
-class="dash"
-src="https://aleenajohnz.github.io/Wipro-Content-Review-Performance-Analysis/visualisations/wipro_content_review_dashboard%20%281%29.png"
-alt="Wipro Content Review Performance Dashboard"
->
-
-
-</article>
-
-</section>
-
-
-
-<!-- SKILLS -->
-
-<section id="skills">
-
-
-<div class="sectionhead">
-
-<h2>
-Skills
-</h2>
-
-<p>
-Technical and analytical skills demonstrated through portfolio work.
-</p>
-
-</div>
-
-
-
-<div class="skills">
-
-
-<div class="card skill">
-
-<h3>
-Data & Programming
-</h3>
-
-<ul>
-
-<li>Python</li>
-
-<li>Pandas & NumPy</li>
-
-<li>SQL</li>
-
-<li>Data Cleaning & Transformation</li>
-
-<li>Exploratory Data Analysis</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="card skill">
-
-<h3>
-Visualisation & Reporting
-</h3>
-
-<ul>
-
-<li>Matplotlib & Seaborn</li>
-
-<li>KPI Analysis</li>
-
-<li>Dashboard Development</li>
-
-<li>Trend & Correlation Analysis</li>
-
-<li>Data Storytelling</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="card skill">
-
-<h3>
-IT & Professional
-</h3>
-
-<ul>
-
-<li>Microsoft 365</li>
-
-<li>Service Desk & ITSM</li>
-
-<li>GitHub</li>
-
-<li>Jupyter / Google Colab</li>
-
-<li>Business Problem Solving</li>
-
-</ul>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-
-<div class="contact">
-
-
-<h2>
-Let's Connect
-</h2>
-
-
-<p>
-Interested in my work or discussing a Data Analyst opportunity?
-You can find my professional profile and portfolio below.
-</p>
-
-
-
-<div class="buttons">
-
-
-<a class="btn"
-href="https://www.linkedin.com/in/aleena-johns-825b65156/"
-target="_blank">
-
-LinkedIn ↗
-
-</a>
-
-
-<a class="btn"
-href="https://github.com/aleenajohnz"
-target="_blank">
-
-GitHub ↗
-
-</a>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- FOOTER -->
-
-<div class="footer">
-
-© 2026 Aleena Johns • Data Analyst Portfolio
-
-</div>
-
+    </footer>
 
 </body>
-
 </html>
