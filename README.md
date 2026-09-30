@@ -233,7 +233,7 @@ The project also includes individual visualisations covering:
 
 The project includes an interactive-style performance dashboard summarising the main operational KPIs.
 
-![Wipro Content Review Performance Dashboard](visualisations/wipro_content_review_dashboard.png)
+![Wipro Content Review Performance Dashboard](./visualisations/wipro_content_review_dashboard.png)
 
 ### Dashboard KPIs
 
