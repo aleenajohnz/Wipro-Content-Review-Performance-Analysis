@@ -1,6 +1,58 @@
+# Wipro Content Review Performance Analysis
+
+## Project Overview
+
+This project analyses content review performance data to evaluate productivity, quality, accuracy, adherence, workload, errors, overtime and attendance across teams and employees.
+
+The analysis uses Python, Pandas and data visualisation techniques to identify performance trends, compare teams and employees, examine relationships between key metrics, and generate actionable business insights.
+
+## Business Objectives
+
+The main objectives of this project were to:
+
+* Evaluate overall operational performance using key performance indicators (KPIs).
+* Compare performance across teams and employees.
+* Analyse weekly performance trends over the 12-week period.
+* Identify patterns in error rates and review accuracy.
+* Examine relationships between productivity, quality, attendance and overtime.
+* Identify areas where performance monitoring or operational improvements may be beneficial.
+* Present key findings through visualisations and an interactive-style performance dashboard.
+
+## Dataset
+
+The dataset contains content review performance records covering **1,200 records across 12 weeks**.
+
+Key data areas include:
+
+* Employee performance
+* Team performance
+* Productivity
+* Quality
+* Accuracy
+* Adherence
+* Cases reviewed
+* Target cases
+* Errors
+* Overtime
+* Attendance
+* Performance status
+
+The dataset should only be shared publicly if it is synthetic, anonymised, or otherwise approved for public use.
+
+## Tools & Technologies
+
+* **Python** – Data analysis and processing
+* **Pandas** – Data cleaning, transformation and aggregation
+* **NumPy** – Numerical analysis
+* **Matplotlib** – Data visualisation
+* **Seaborn** – Statistical visualisation
+* **Jupyter / Google Colab** – Development environment
+* **GitHub** – Project documentation and portfolio management
+
 ## Data Cleaning & Preparation
 
 The dataset was cleaned and prepared using Python and Pandas before performing the analysis.
+
 
 The following steps were completed:
 
