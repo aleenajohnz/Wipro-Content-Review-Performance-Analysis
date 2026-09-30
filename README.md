@@ -363,3 +363,7 @@ The analysis uses:
 The analysis uses the `content_review_new.csv` dataset.
 
 The dataset should only be shared publicly if it is synthetic, anonymised, or otherwise approved for public use.
+## Connect with Me
+
+- [LinkedIn](https://www.linkedin.com/in/aleena-johns-825b65156/)
+- [GitHub](https://github.com/aleenajohnz)
