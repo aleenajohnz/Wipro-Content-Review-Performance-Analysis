@@ -217,6 +217,14 @@ The project also includes individual visualisations covering:
 
 Based on the analysis, the following areas could be considered for further operational review:
 
+* Monitor **error rates alongside productivity** rather than relying on productivity alone as a performance indicator.
+* Investigate teams and weeks with comparatively higher error rates to identify potential process or training opportunities.
+* Continue monitoring **quality and accuracy alongside case volumes** to maintain a balance between productivity and review quality.
+* Review overtime patterns alongside workload and performance data to understand where additional capacity may be required.
+* Use weekly performance monitoring to identify changes in productivity, quality and overall performance early.
+* Consider targeted coaching or quality-assurance reviews where employee-level data indicates recurring performance gaps.
+
+
 ### 1. Investigate Error Rates
 
 The overall error rate was **7.61%**, with differences observed across teams and employees.
