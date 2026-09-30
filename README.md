@@ -198,3 +198,34 @@ The project also includes individual visualisations covering:
 - Absence vs Overall Score
 - Cases Reviewed vs Productivity
 - Error Rate by Performance Status
+## Dashboard & Visualisations
+
+A performance dashboard was created to provide a high-level view of the main operational KPIs.
+
+The dashboard includes:
+
+- Average Productivity
+- Average Quality
+- Average Accuracy
+- Average Adherence
+- Average Overall Score
+- Overall Error Rate
+- Team Overall Score
+- Team Error Rate
+- Weekly Overall Score
+- Performance Status by Team
+
+### Key Visualisations
+
+The project also includes individual visualisations covering:
+
+- Overall Score by Team
+- Error Rate by Team
+- Weekly Overall Score
+- Productivity vs Quality
+- Correlation Matrix
+- Top 10 Employees by Error Rate
+- Overtime vs Overall Score
+- Absence vs Overall Score
+- Cases Reviewed vs Productivity
+- Error Rate by Performance Status
