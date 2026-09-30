@@ -224,6 +224,17 @@ Based on the analysis, the following areas could be considered for further opera
 * Use weekly performance monitoring to identify changes in productivity, quality and overall performance early.
 * Consider targeted coaching or quality-assurance reviews where employee-level data indicates recurring performance gaps.
 
+  ## Conclusion
+
+This project demonstrates how Python, Pandas, SQL and data visualisation can be used to analyse employee performance and operational data.
+
+The analysis examined productivity, quality, accuracy, adherence, workload, errors, overtime, attendance and performance status across 1,200 records over a 12-week period.
+
+The findings provide a clear view of performance patterns across teams, weeks and employees. The dashboard presents the main KPIs and trends in an accessible format, while the detailed analysis demonstrates how data can be transformed into meaningful business insights.
+
+Overall, this project demonstrates practical skills in data cleaning, exploratory data analysis, KPI analysis, correlation analysis, data visualisation and business reporting.
+
+
 
 ### 1. Investigate Error Rates
 
