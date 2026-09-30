@@ -285,3 +285,42 @@ Further analysis could examine overtime alongside workload, staffing levels, att
 The analysis demonstrates that a single metric does not provide a complete view of operational performance.
 
 A balanced performance dashboard combining productivity, quality, accuracy, adherence, error rate and workload can provide a broader view of operational trends.
+## Skills Demonstrated
+
+### Technical Skills
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Data Cleaning
+- Data Transformation
+- Exploratory Data Analysis (EDA)
+- Data Aggregation
+- GroupBy Analysis
+- Correlation Analysis
+- KPI Analysis
+- Data Visualisation
+- Dashboard Development
+
+### Analytical Skills
+
+- Business problem analysis
+- Performance analysis
+- Trend analysis
+- Error-rate analysis
+- Employee-level analysis
+- Team-level analysis
+- Operational KPI monitoring
+- Identifying patterns and relationships
+- Translating data into business insights
+- Data-driven recommendations
+
+### Portfolio & Reporting Skills
+
+- GitHub project management
+- Jupyter/Google Colab notebooks
+- Data storytelling
+- Visual communication of insights
+- Documentation using Markdown
