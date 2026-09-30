@@ -200,38 +200,9 @@ The project also includes individual visualisations covering:
 - Error Rate by Performance Status
 ## Dashboard & Visualisations
 
+## Dashboard & Visualisations
+
 A performance dashboard was created to provide a high-level view of the main operational KPIs.
-
-The dashboard includes:
-
-- Average Productivity
-- Average Quality
-- Average Accuracy
-- Average Adherence
-- Average Overall Score
-- Overall Error Rate
-- Team Overall Score
-- Team Error Rate
-- Weekly Overall Score
-- Performance Status by Team
-
-### Key Visualisations
-
-The project also includes individual visualisations covering:
-
-- Overall Score by Team
-- Error Rate by Team
-- Weekly Overall Score
-- Productivity vs Quality
-- Correlation Matrix
-- Top 10 Employees by Error Rate
-- Overtime vs Overall Score
-- Absence vs Overall Score
-- Cases Reviewed vs Productivity
-- Error Rate by Performance Status
-## Dashboard
-
-The project includes an interactive-style performance dashboard summarising the main operational KPIs.
 
 ![Wipro Content Review Performance Dashboard](./visualisations/wipro_content_review_dashboard.png)
 
@@ -246,6 +217,22 @@ The project includes an interactive-style performance dashboard summarising the 
 | Average Overall Score | 96.35% |
 | Overall Error Rate | 7.61% |
 | Met or Exceeded Target | 83.83% |
+
+### Key Visualisations
+
+The project includes visualisations covering:
+
+- Overall Score by Team
+- Error Rate by Team
+- Weekly Overall Score
+- Productivity vs Quality
+- Correlation Matrix
+- Top 10 Employees by Error Rate
+- Overtime vs Overall Score
+- Absence vs Overall Score
+- Cases Reviewed vs Productivity
+- Error Rate by Performance Status
+
 ## Business Recommendations
 
 Based on the analysis, the following areas could be considered for further operational review:
@@ -285,6 +272,7 @@ Further analysis could examine overtime alongside workload, staffing levels, att
 The analysis demonstrates that a single metric does not provide a complete view of operational performance.
 
 A balanced performance dashboard combining productivity, quality, accuracy, adherence, error rate and workload can provide a broader view of operational trends.
+
 ## Skills Demonstrated
 
 ### Technical Skills
@@ -324,12 +312,12 @@ A balanced performance dashboard combining productivity, quality, accuracy, adhe
 - Data storytelling
 - Visual communication of insights
 - Documentation using Markdown
-## How to Run the Project
+
 ## How to Run the Project
 
 The analysis was developed using Google Colab and Python.
 
-### 1. Open the notebook
+### Open the Notebook
 
 Open:
 
@@ -337,7 +325,7 @@ Open:
 
 The notebook contains the complete data cleaning, analysis, visualisations and dashboard development.
 
-### 2. Run the notebook
+### Run the Notebook
 
 The notebook can be opened using:
 
@@ -345,7 +333,7 @@ The notebook can be opened using:
 - Jupyter Notebook
 - JupyterLab
 
-### 3. Required Python libraries
+### Required Python Libraries
 
 The analysis uses:
 
@@ -354,13 +342,8 @@ The analysis uses:
 - Matplotlib
 - Seaborn
 
-### 4. Dataset
+### Dataset
 
 The analysis uses the `content_review_new.csv` dataset.
 
 The dataset should only be shared publicly if it is synthetic, anonymised, or otherwise approved for public use.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/Wipro-Content-Review-Performance-Analysis.git
