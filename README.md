@@ -324,3 +324,9 @@ A balanced performance dashboard combining productivity, quality, accuracy, adhe
 - Data storytelling
 - Visual communication of insights
 - Documentation using Markdown
+## How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/Wipro-Content-Review-Performance-Analysis.git
