@@ -229,3 +229,20 @@ The project also includes individual visualisations covering:
 - Absence vs Overall Score
 - Cases Reviewed vs Productivity
 - Error Rate by Performance Status
+## Dashboard
+
+The project includes an interactive-style performance dashboard summarising the main operational KPIs.
+
+![Wipro Content Review Performance Dashboard](visualisations/wipro_content_review_dashboard.png)
+
+### Dashboard KPIs
+
+| KPI | Value |
+|---|---:|
+| Average Productivity | 100.79% |
+| Average Quality | 92.41% |
+| Average Accuracy | 93.93% |
+| Average Adherence | 94.97% |
+| Average Overall Score | 96.35% |
+| Overall Error Rate | 7.61% |
+| Met or Exceeded Target | 83.83% |
