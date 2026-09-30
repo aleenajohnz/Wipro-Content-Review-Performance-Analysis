@@ -171,6 +171,8 @@ For example, productivity and overall score showed a very strong positive correl
 
 A performance dashboard was created to provide a high-level view of the main operational KPIs.
 
+![Wipro Content Review Performance Dashboard](./visualisations/wipro_content_review_dashboard.png)
+
 The dashboard includes:
 
 - Average Productivity
