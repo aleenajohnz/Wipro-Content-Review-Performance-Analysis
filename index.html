@@ -37,6 +37,7 @@
             background-repeat: no-repeat;
         }
 
+
         /* =========================
            NAVIGATION
         ========================== */
@@ -50,35 +51,36 @@
             border-bottom: 1px solid #e5e7eb;
 
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
 
             padding: 18px 7%;
         }
 
-        .nav-name {
-            font-size: 22px;
-            font-weight: bold;
-            color: #111827;
-            letter-spacing: 1px;
-        }
-
         .nav-links {
             display: flex;
             list-style: none;
+
             gap: 28px;
+
+            justify-content: flex-end;
+            align-items: center;
         }
 
         .nav-links a {
             text-decoration: none;
+
             color: #374151;
+
             font-weight: 600;
+
             transition: 0.3s;
         }
 
         .nav-links a:hover {
             color: #2563eb;
         }
+
 
         /* =========================
            HERO
@@ -89,6 +91,7 @@
 
             display: flex;
             flex-direction: column;
+
             justify-content: center;
             align-items: center;
 
@@ -99,28 +102,44 @@
 
         .hero h1 {
             font-size: clamp(42px, 7vw, 78px);
+
             letter-spacing: 5px;
+
             color: #111827;
+
             margin-bottom: 15px;
         }
 
         .hero h2 {
             font-size: clamp(20px, 3vw, 32px);
+
             font-weight: 500;
+
             color: #2563eb;
+
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 21px;
+
             color: #4b5563;
+
             margin-bottom: 30px;
         }
 
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
         .buttons {
             display: flex;
+
             gap: 15px;
+
             justify-content: center;
+
             flex-wrap: wrap;
         }
 
@@ -136,6 +155,7 @@
             font-weight: bold;
 
             background: #2563eb;
+
             color: white;
 
             transition: 0.3s;
@@ -143,6 +163,7 @@
 
         .button:hover {
             background: #1d4ed8;
+
             transform: translateY(-2px);
         }
 
@@ -154,12 +175,14 @@
             background: #374151;
         }
 
+
         /* =========================
            GENERAL SECTIONS
         ========================== */
 
         section {
             width: 90%;
+
             max-width: 1200px;
 
             margin: 0 auto;
@@ -177,6 +200,7 @@
             color: #111827;
         }
 
+
         /* =========================
            ABOUT
         ========================== */
@@ -188,7 +212,8 @@
 
             border-radius: 15px;
 
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.08);
 
             font-size: 18px;
         }
@@ -196,6 +221,7 @@
         .about-card p {
             margin-bottom: 18px;
         }
+
 
         /* =========================
            SKILLS
@@ -219,7 +245,8 @@
 
             text-align: center;
 
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+            box-shadow:
+                0 6px 20px rgba(0, 0, 0, 0.07);
 
             transition: 0.3s;
         }
@@ -234,6 +261,7 @@
             margin-bottom: 10px;
         }
 
+
         /* =========================
            PROJECT
         ========================== */
@@ -245,7 +273,8 @@
 
             border-radius: 15px;
 
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.08);
         }
 
         .project-card h3 {
@@ -294,6 +323,7 @@
             font-weight: bold;
         }
 
+
         /* =========================
            DASHBOARD
         ========================== */
@@ -305,7 +335,8 @@
 
             border-radius: 15px;
 
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.08);
 
             overflow: hidden;
         }
@@ -333,8 +364,10 @@
 
             border-radius: 10px;
 
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.12);
         }
+
 
         /* =========================
            VISUALISATIONS
@@ -358,7 +391,8 @@
 
             border-radius: 12px;
 
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+            box-shadow:
+                0 6px 20px rgba(0, 0, 0, 0.07);
         }
 
         .chart-card h3 {
@@ -381,6 +415,7 @@
             border-radius: 8px;
         }
 
+
         /* =========================
            CONTACT
         ========================== */
@@ -394,7 +429,8 @@
 
             border-radius: 15px;
 
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.08);
         }
 
         .contact-card p {
@@ -402,6 +438,7 @@
 
             margin-bottom: 25px;
         }
+
 
         /* =========================
            FOOTER
@@ -419,6 +456,7 @@
             margin-top: 40px;
         }
 
+
         /* =========================
            MOBILE
         ========================== */
@@ -426,9 +464,7 @@
         @media (max-width: 768px) {
 
             nav {
-                flex-direction: column;
-
-                gap: 15px;
+                justify-content: center;
 
                 padding: 15px;
             }
@@ -461,12 +497,15 @@
             .visualisations-grid {
                 grid-template-columns: 1fr;
             }
+
         }
 
     </style>
 </head>
 
+
 <body>
+
 
     <!-- =========================
          NAVIGATION
@@ -477,23 +516,33 @@
         <ul class="nav-links">
 
             <li>
-                <a href="#about">About</a>
+                <a href="#about">
+                    About
+                </a>
             </li>
 
             <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills">
+                    Skills
+                </a>
             </li>
 
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">
+                    Projects
+                </a>
             </li>
 
             <li>
-                <a href="#visualisations">Visualisations</a>
+                <a href="#visualisations">
+                    Visualisations
+                </a>
             </li>
 
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact">
+                    Contact
+                </a>
             </li>
 
         </ul>
@@ -507,7 +556,9 @@
 
     <header class="hero">
 
-        <h1>ALEENA JOHNS</h1>
+        <h1>
+            ALEENA JOHNS
+        </h1>
 
         <h2>
             Data Analyst | Python | SQL | Data Visualisation
@@ -523,14 +574,18 @@
                 class="button"
                 href="https://www.linkedin.com/in/aleena-johns-825b65156/"
                 target="_blank">
+
                 LinkedIn
+
             </a>
 
             <a
                 class="button secondary"
                 href="https://github.com/"
                 target="_blank">
+
                 GitHub
+
             </a>
 
         </div>
@@ -544,7 +599,9 @@
 
     <section id="about">
 
-        <h2>About Me</h2>
+        <h2>
+            About Me
+        </h2>
 
         <div class="about-card">
 
@@ -577,51 +634,90 @@
 
     <section id="skills">
 
-        <h2>Skills</h2>
+        <h2>
+            Skills
+        </h2>
 
         <div class="skills-container">
 
+
             <div class="skill-card">
-                <h3>Python</h3>
+
+                <h3>
+                    Python
+                </h3>
+
                 <p>
                     Pandas, NumPy, Matplotlib and Seaborn
                 </p>
+
             </div>
 
+
             <div class="skill-card">
-                <h3>SQL</h3>
+
+                <h3>
+                    SQL
+                </h3>
+
                 <p>
                     Data querying, filtering, aggregation and analysis
                 </p>
+
             </div>
 
+
             <div class="skill-card">
-                <h3>Power BI</h3>
+
+                <h3>
+                    Power BI
+                </h3>
+
                 <p>
                     Dashboards, KPIs and data visualisation
                 </p>
+
             </div>
 
+
             <div class="skill-card">
-                <h3>Excel</h3>
+
+                <h3>
+                    Excel
+                </h3>
+
                 <p>
                     Data analysis, formulas, tables and reporting
                 </p>
+
             </div>
 
+
             <div class="skill-card">
-                <h3>Data Visualisation</h3>
+
+                <h3>
+                    Data Visualisation
+                </h3>
+
                 <p>
                     Charts, dashboards and performance reporting
                 </p>
+
             </div>
 
+
             <div class="skill-card">
-                <h3>IT & NHS Systems</h3>
+
+                <h3>
+                    IT & NHS Systems
+                </h3>
+
                 <p>
                     IT support, EPR systems and digital healthcare
                 </p>
+
             </div>
+
 
         </div>
 
@@ -634,7 +730,9 @@
 
     <section id="projects">
 
-        <h2>Featured Project</h2>
+        <h2>
+            Featured Project
+        </h2>
 
         <div class="project-card">
 
@@ -682,19 +780,33 @@
 
             <div class="tech-tags">
 
-                <span class="tag">Python</span>
+                <span class="tag">
+                    Python
+                </span>
 
-                <span class="tag">Pandas</span>
+                <span class="tag">
+                    Pandas
+                </span>
 
-                <span class="tag">Matplotlib</span>
+                <span class="tag">
+                    Matplotlib
+                </span>
 
-                <span class="tag">Seaborn</span>
+                <span class="tag">
+                    Seaborn
+                </span>
 
-                <span class="tag">Data Analysis</span>
+                <span class="tag">
+                    Data Analysis
+                </span>
 
-                <span class="tag">Data Visualisation</span>
+                <span class="tag">
+                    Data Visualisation
+                </span>
 
-                <span class="tag">Jupyter Notebook</span>
+                <span class="tag">
+                    Jupyter Notebook
+                </span>
 
             </div>
 
@@ -704,12 +816,17 @@
 
 
     <!-- =========================
-         DASHBOARD
+         DASHBOARD & VISUALISATIONS
     ========================== -->
 
     <section id="visualisations">
 
-        <h2>Dashboard & Visualisations</h2>
+        <h2>
+            Dashboard & Visualisations
+        </h2>
+
+
+        <!-- MAIN DASHBOARD -->
 
         <div class="dashboard-container">
 
@@ -718,18 +835,17 @@
             </h3>
 
             <img
-                 class="dashboard-image"
-                 src="visualisations/wipro_content_review_dashboard%20(1).png"
-                 alt="Wipro Content Review Performance Dashboard">
+                class="dashboard-image"
+                src="visualisations/wipro_content_review_dashboard%20(1).png"
+                alt="Wipro Content Review Performance Dashboard">
 
         </div>
 
 
-        <!-- =========================
-             INDIVIDUAL CHARTS
-        ========================== -->
+        <!-- INDIVIDUAL CHARTS -->
 
         <div class="visualisations-grid">
+
 
             <div class="chart-card">
 
@@ -873,6 +989,7 @@
 
             </div>
 
+
         </div>
 
     </section>
@@ -884,7 +1001,9 @@
 
     <section id="contact">
 
-        <h2>Contact</h2>
+        <h2>
+            Contact
+        </h2>
 
         <div class="contact-card">
 
@@ -899,14 +1018,18 @@
                     class="button"
                     href="https://www.linkedin.com/in/aleena-johns-825b65156/"
                     target="_blank">
+
                     Connect on LinkedIn
+
                 </a>
 
                 <a
                     class="button secondary"
                     href="https://github.com/"
                     target="_blank">
+
                     View GitHub
+
                 </a>
 
             </div>
@@ -927,6 +1050,7 @@
         </p>
 
     </footer>
+
 
 </body>
 </html>
