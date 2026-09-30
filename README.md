@@ -325,6 +325,40 @@ A balanced performance dashboard combining productivity, quality, accuracy, adhe
 - Visual communication of insights
 - Documentation using Markdown
 ## How to Run the Project
+## How to Run the Project
+
+The analysis was developed using Google Colab and Python.
+
+### 1. Open the notebook
+
+Open:
+
+`Wipro_Content_Review_Analysis.ipynb`
+
+The notebook contains the complete data cleaning, analysis, visualisations and dashboard development.
+
+### 2. Run the notebook
+
+The notebook can be opened using:
+
+- Google Colab
+- Jupyter Notebook
+- JupyterLab
+
+### 3. Required Python libraries
+
+The analysis uses:
+
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+### 4. Dataset
+
+The analysis uses the `content_review_new.csv` dataset.
+
+The dataset should only be shared publicly if it is synthetic, anonymised, or otherwise approved for public use.
 
 ### 1. Clone the repository
 
