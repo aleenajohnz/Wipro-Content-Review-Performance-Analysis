@@ -198,8 +198,7 @@ The project also includes individual visualisations covering:
 - Absence vs Overall Score
 - Cases Reviewed vs Productivity
 - Error Rate by Performance Status
-## Dashboard & Visualisations
-
+  
 ## Dashboard & Visualisations
 
 A performance dashboard was created to provide a high-level view of the main operational KPIs.
