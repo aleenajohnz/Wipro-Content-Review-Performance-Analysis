@@ -199,39 +199,6 @@ The project also includes individual visualisations covering:
 - Cases Reviewed vs Productivity
 - Error Rate by Performance Status
   
-## Dashboard & Visualisations
-
-A performance dashboard was created to provide a high-level view of the main operational KPIs.
-
-![Wipro Content Review Performance Dashboard](./visualisations/wipro_content_review_dashboard.png)
-
-### Dashboard KPIs
-
-| KPI | Value |
-|---|---:|
-| Average Productivity | 100.79% |
-| Average Quality | 92.41% |
-| Average Accuracy | 93.93% |
-| Average Adherence | 94.97% |
-| Average Overall Score | 96.35% |
-| Overall Error Rate | 7.61% |
-| Met or Exceeded Target | 83.83% |
-
-### Key Visualisations
-
-The project includes visualisations covering:
-
-- Overall Score by Team
-- Error Rate by Team
-- Weekly Overall Score
-- Productivity vs Quality
-- Correlation Matrix
-- Top 10 Employees by Error Rate
-- Overtime vs Overall Score
-- Absence vs Overall Score
-- Cases Reviewed vs Productivity
-- Error Rate by Performance Status
-
 ## Business Recommendations
 
 Based on the analysis, the following areas could be considered for further operational review:
