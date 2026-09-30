@@ -114,3 +114,56 @@ Created charts using Matplotlib and Seaborn to communicate key findings.
 ### 10. Performance Dashboard
 
 Developed a dashboard summarising the main KPIs and performance trends.
+## Key Findings
+
+The analysis identified several important patterns in the content review dataset.
+
+### Overall Performance
+
+- Average productivity was **100.79%**.
+- Average quality was **92.41%**.
+- Average accuracy was **93.93%**.
+- Average adherence was **94.97%**.
+- Average overall score was **96.35%**.
+- A total of **544,281 cases** were reviewed against a total target of **540,000 cases**.
+- The dataset contained **41,420 errors**, giving an overall error rate of **7.61%**.
+- **83.83%** of records were classified as either Met Target or Exceeded Target.
+
+### Team Performance
+
+- Team D recorded the highest average productivity at **101.68%** and the highest average overall score at **96.58%**.
+- Team C recorded the highest average quality at **93.08%** and the lowest team error rate at **6.96%**.
+- Team E recorded the highest average accuracy at **94.14%** and the lowest total overtime at **1,170 hours**.
+- Team A had the highest team error rate at **8.15%**.
+
+### Weekly Trends
+
+- Week 3 recorded the highest average overall score at **97.02%**.
+- Week 1 recorded the lowest average overall score at **95.34%**.
+- Week 3 also recorded the highest average productivity at **102.65%**.
+- Week 9 recorded the lowest average quality at **91.64%**.
+
+### Productivity and Quality
+
+The correlation between productivity and quality was approximately **-0.02**, indicating a negligible linear relationship in this dataset.
+
+This suggests that higher productivity was not strongly associated with higher or lower quality scores. Correlation measures association and does not establish causation.
+
+### Overtime
+
+Employee-level analysis found only weak correlations between overtime hours and performance metrics.
+
+The correlation between total overtime and average overall score was approximately **0.07**, suggesting that overtime alone did not strongly explain differences in overall performance within this dataset.
+
+### Error Rate
+
+- The highest employee error rate identified was **11.46%**.
+- The lowest employee error rate identified was **4.98%**.
+- Employees with higher error rates generally showed lower quality scores in the analysed records.
+- One example showed that high productivity can coexist with a higher error rate, demonstrating why multiple performance metrics should be considered together.
+
+### Important Analytical Consideration
+
+Some metrics show very strong correlations because performance measures may be mathematically related or derived from common underlying measures.
+
+For example, productivity and overall score showed a very strong positive correlation. Therefore, these relationships should be interpreted carefully rather than treated as independent business drivers.
